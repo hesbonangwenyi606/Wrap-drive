@@ -2,13 +2,12 @@
 
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
-import WhatsAppFloat from "../../components/WhatsAppFloat"
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 
 export default function Contact() {
   const handleWhatsAppClick = () => {
     const message = "Hi! I'd like to get in touch regarding your automotive services."
-    const phoneNumber = "254703201556" // Replace with actual number
+    const phoneNumber = "254743573380" // Updated number
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(url, "_blank")
   }
@@ -36,7 +35,7 @@ export default function Contact() {
                     <div className="contact-icon"><FaPhoneAlt /></div>
                     <div>
                       <h3>Phone</h3>
-                      <p>+254792391610</p>
+                      <p>+254 (0) 743 573 380</p>
                     </div>
                   </div>
 
@@ -44,7 +43,7 @@ export default function Contact() {
                     <div className="contact-icon"><FaEnvelope /></div>
                     <div>
                       <h3>Email</h3>
-                      <p>wrapndrivelimited@gmail.com</p>
+                      <p>hesbonmanyinsa96@gmail.com</p>
                     </div>
                   </div>
 
@@ -52,11 +51,7 @@ export default function Contact() {
                     <div className="contact-icon"><FaMapMarkerAlt /></div>
                     <div>
                       <h3>Location</h3>
-                      <p>
-                        Nothern bypass, opposite quickmart thome, Gachie
-                        <br />
-                        Nairobi, Kenya
-                      </p>
+                      <p>Ngong Road, Nairobi, Kenya</p>
                     </div>
                   </div>
 
@@ -79,24 +74,20 @@ export default function Contact() {
               </div>
 
               <div className="map-section">
-  <h3>Find Us</h3>
-  <div className="map-placeholder">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d908.7408648317944!2d36.872593904936906!3d-1.2124852129012467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1748451817765!5m2!1sen!2ske"
-      width="100%"
-      height="450"
-      style={{ border: 0 }}
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Wrap & Drive Location"
-    ></iframe>
-    {/* <div className="map-overlay">
-      <p>📍 Wrap & Drive Location</p>
-      <small>Click the map to view on Google Maps</small>
-    </div> */}
-  </div>
-</div>
+                <h3>Find Us</h3>
+                <div className="map-placeholder">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d908.7408648317944!2d36.872593904936906!3d-1.2124852129012467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1748451817765!5m2!1sen!2ske"
+                    width="100%"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Wrap & Drive Location"
+                  ></iframe>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -115,7 +106,6 @@ export default function Contact() {
         </section>
       </main>
       <Footer />
-      {/* <WhatsAppFloat /> */}
     </>
   )
 }
